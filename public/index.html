@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONQUEST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title"><a href = "http://localhost:3000/"><img id="img-one" src="https://media.indiedb.com/images/members/4/3335/3334598/J._R._R._Tolkien_Symbol.1.jpg" alt="Tolkien Symbol" width="50" height="50"> Tolkien's Duel of Doom</a></h1>
+    <main>
+    
+    <p>
+        <b>
+            Team up to battle it out for the conquest of Middle Earth!<br>
+            Prevail and absolute control of Arda is yours.<br>
+            But know this - Your opponents are no walk in the shire...
+        </b>
+    </p>
+    
+    <button id="see-all">Villainous View</button>
+    <div id="all-bots"></div>
+
+    <hr/>
+
+    <h2 id="wins"></h2>
+    <h2 id="losses"></h2>
+
+    <hr/>
+
+    <button id="draw">Draw</button>
+
+    <section>
+        <h2 id="choose-header">Choose 2!</h2>
+        <div id="choices" class="container"></div>
+    </section>
+
+    <h2 id="results"></h2>
+    <button id="play-again">Play again!</button>
+
+    <section class="container">
+        <section>
+            <h2 id="your-duo-header">Your Duo</h2>
+            <div id="player-duo" class="container"></div>
+        </section>
+        <section>
+            <h2 id="comp-duo-header">Computer Duo</h2>
+            <div id="comp-duo" class="container"></div>
+        </section>
+    </section>
+
+    <button id="duel">DUEL!</button>
+</main>
+    <footer>
+        <img id="img-three" src="https://media.indiedb.com/images/members/4/3335/3334598/J._R._R._Tolkien_Symbol.1.jpg" alt="Tolkien Symbol" width="50" height="50">
+        <blockquote>
+          "From the ashes a fire shall be woken,
+          A light from the shadows shall spring;
+          Renewed shall be blade that was broken,
+          The crownless again shall be king."
+          <cite>- J.R.R. Tolkien</cite>
+        </blockquote>
+      </footer>
+      
+      
+
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
