@@ -90,6 +90,34 @@ app.get("/api/player", (req, res) => {
   }
 });
 
+// ...
+
+app.put("/api/player", (req, res) => {
+  try {
+    const { wins, losses } = req.body;
+    playerRecord.wins = wins;
+    playerRecord.losses = losses;
+    res.status(200).send(playerRecord);
+  } catch (error) {
+    console.log("ERROR UPDATING PLAYER STATS", error);
+    res.sendStatus(400);
+  }
+});
+
+app.delete("/api/player", (req, res) => {
+  try {
+    playerRecord.wins = 0;
+    playerRecord.losses = 0;
+    res.status(200).send(playerRecord);
+  } catch (error) {
+    console.log("ERROR DELETING PLAYER STATS", error);
+    res.sendStatus(400);
+  }
+});
+
+// ...
+
+
 app.listen(8000, () => {
   console.log(`Listening on 8000`);
 });
